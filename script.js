@@ -47,7 +47,7 @@ setTimeout(turnNightMode,1000);
 
 let footer = document.getElementById('footer');
 let current_year = date.getFullYear();
-footer.innerHTML = `Andrey ${current_year}`;
+footer.innerHTML = `Andrey - ${current_year}`;
 
 
 //render modals
@@ -99,9 +99,8 @@ function findCities(city, api="0a2bf8880e3e4b43f5f0eea3378254ae"){
     fetch(`https://api.openweathermap.org/data/2.5/find?q=${city}&appid=${api}`)
     .then(response => response.json())
         .then(data => {
-            // console.log(data);
+            //console.log(data);
             if (data['count'] == 0){
-                // console.log('data equals 0')
                 hideFound();
                 showUnfound();
             }
@@ -115,7 +114,6 @@ function findCities(city, api="0a2bf8880e3e4b43f5f0eea3378254ae"){
 
 
 
-                // console.log(data['count']);
 
             }
         })
