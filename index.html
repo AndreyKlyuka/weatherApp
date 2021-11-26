@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div id="bg-mode" class="hero-section ">
+        <div class="search-bar" onclick="setFocus();turnNightMode();">
+            <input id="input" class="search-input" type="text" placeholder="Start typing to search..." autofocus autocomplete="off">
+            <div id="search-button-mode" class="search-button" onclick="findCities(inputCity())">
+                <img src="img/Vector.svg" alt="">
+            </div>
+        </div>
+        <div class="weather-details">
+            <div class="cart-main">
+                <div class="cart-weather-icon">
+                    <img class="icon" src="img/image 1.png" alt="">
+                </div>
+                <div class="cart-weather-and-city">
+                    <div class="cart-weather">
+                        <div class="header2 temp">+23 ℃</div>
+                        <div class="name">Drizzle</div>
+                        <div class="description main-gray">Light intensity drizzle</div>
+                    </div>
+                    <div class="cart-city-and-date">
+                        <div class="header2 city">Odessa, Ukraine</div>
+                        <div class="date main-gray">24 hovebmer 2021</div>
+                    </div>
+                </div> 
+            </div>
+            <div class="cart-footer">
+                <div class="cart-min main-gray">
+                    <div class="cart-min-text">
+                        Min
+                    </div>
+                    <div class="min-value">
+                        +33
+                    </div>
+                </div>
+                <div class="cart-max main-gray">
+                    <div class="cart-max-text">
+                        Max
+                    </div>
+                    <div class="max-value">
+                        -33
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="popular-cities">
+            <div class="popular-cities-header header1">
+                Check the weather in most popular cities in <br>  the world
+            </div>
+            <div class="cities-grid">
+                <div class="new-york" onclick="getWeather('new york')">
+                    <div class="city-text">
+                        New York
+                    </div>
+                </div>
+                <div class="london" onclick="getWeather('london')">
+                    <div class="city-text">
+                        London
+                    </div>
+                </div>
+                <div class="dubai" onclick="getWeather('dubai')">
+                    <div class="city-text">
+                        Dubai
+                    </div>
+                </div>
+                <div class="paris" onclick="getWeather('paris')">
+                    <div class="city-text">
+                        Paris
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-header header1">
+                Frequently Asked Questions
+            </div>
+            <div class="faq-questions">
+                <div class="faq-questions-header question">
+                    <div>Question 1</div>
+                    <div>
+                        <img class="arrow-1" src="img/vector arrow.svg" alt="" onclick="openCloseFaq('arrow-1','question-1')">
+                    </div>
+                </div>
+                <div class="faq-questions-text question question-1 hidden">
+                    <div>
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+                    </div>
+                </div>
+                <div class="faq-questions-header question">
+                    <div>Question 2</div>
+                    <div>
+                        <img class="arrow-2" src="img/vector arrow.svg" alt="" onclick="openCloseFaq('arrow-2','question-2')">
+                    </div>
+                </div>
+                <div class="faq-questions-text question question-2 hidden">
+                    <div>
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+                    </div>
+                </div>
+                <div class="faq-questions-header question">
+                    <div>Question 3</div>
+                    <div>
+                        <img class="arrow-3" src="img/vector arrow.svg" alt="" onclick="openCloseFaq('arrow-3','question-3')">
+                    </div>
+                </div>
+                <div class="faq-questions-text question question-3 hidden">
+                    <div>
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+                    </div>
+                </div>
+                <div class="faq-questions-header question">
+                    <div s >Question 4</div>
+                    <div>
+                        <img class="arrow-4" src="img/vector arrow.svg" alt="" onclick="openCloseFaq('arrow-4','question-4')">
+                  </div>
+                </div>
+                <div class="faq-questions-text question question-4 hidden"">
+                    <div>
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div>
+            content
+        </div>
+    </footer>
+    <div class="modal-found">
+        <div class="modal-body">
+            <div class="modal-content">
+                <div  class="city-name" onclick="selectCityFromDropDown()">
+                    <div id="city-1">
+                        
+                    </div>
+                </div>
+                <div class="city-name" onclick="selectCityFromDropDown()">
+                    <div id="city-2">
+                        
+                    </div>
+                </div>
+                <div class="city-name" onclick="selectCityFromDropDown()">
+                    <div id="city-3">
+                        
+                    </div>
+                </div>
+                <div class="city-name" onclick="selectCityFromDropDown()">
+                    <div id="city-4">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-not-found">
+        <div class="modal-body-not-found">
+            <div class="modal-not-found-content">
+                City not found, please try to change your search query
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

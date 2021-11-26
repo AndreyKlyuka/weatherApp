@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+/* standart font setting */
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* special font setting */
+
+.header1 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.header2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+
+}
+
+/* colors */
+
+.main-gray {
+    color: #9E9E9E;
+}
+
+/* hero section */
+
+.hero-section {
+    width: 100%;
+    height: 426px;
+    background-image: url('/img/bg.svg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar {
+    width: 600px;
+    height: 60px;
+    background: #FFFFFF;
+    margin-top: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.search-input{
+    width: 190px;
+    height: 24px;
+    color: #9E9E9E;
+    padding-left: 20px;
+    border: 0;
+    background: transparent;
+}
+
+.search-input:focus{
+    outline: none;
+    background: transparent;
+}
+
+.search-button {
+    width: 40px;
+    height: 40px;
+    background-color: #90CAF9;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.search-button img{
+    margin: 12px;
+}
+
+/* weather details */
+
+.weather-details {
+    width: 600px;
+    height: 236px;
+    background: #FFFFFFDB;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    padding: 20px;
+
+}
+
+.cart-main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.cart-weather-icon {
+    width: 100px;
+    height: 100px;
+    background: #FFFFFF;
+    border-radius: 30px;
+}
+
+.cart-weather-and-city {
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+.cart-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.name {
+    margin: 10px 0;
+}
+
+.cart-city-and-date {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.date {
+    margin-top: 10px;
+}
+
+.cart-footer {
+    width: 560px;
+    height: 76px;
+    border-top: 1px solid #BFDCE8;
+    display: flex;
+    padding-top: 20px;
+}
+
+.cart-min {
+    border-right: 1px solid #BFDCE8;
+    margin-right: 111px;
+    margin-left: 99px;
+    padding-right: 130px;
+}
+
+.min-text, .min-value, .max-text, .max-value {
+    width: 50px;
+    height: 24px;
+    text-align: center;
+}
+
+.min-value, .max-value {
+    font-weight: 600;
+    color: #212121;
+}
+
+
+/* main */
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popular-cities {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popular-cities-header {
+    width: 670px;
+    height: 76px;
+    text-align: center;
+    margin: 70px 145px 35px 185px;
+    font-weight: 600;
+}
+
+.cities-grid {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.cities-grid > div {
+    width: 220px;
+    height: 220px;
+    border-radius: 30px;
+}
+
+.cities-grid div div {
+    margin: 175px 10px 18px 10px;
+}
+
+.city-text {
+    width: 200px;
+    height: 36px;
+    background: #ffffff;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.new-york {
+    background-image: url('/img/new york.svg');
+}
+
+.london {
+    background-image: url('/img/london.svg');
+}
+
+.dubai {
+    background-image: url('/img/dubai.svg');
+}
+
+.paris {
+    background-image: url('/img/paris.svg');
+}
+
+.faq {
+    width: 1000px;
+    height: 100%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-header {
+    width: 670px;
+    height: 76px;
+    text-align: center;
+    margin-left: 173px;
+    margin-right: 164px;
+    font-weight: 600;
+}
+
+.faq-question-header {
+    height: 54px;
+    width: 1000px;
+    margin-top: 35px;
+    border-radius: 30px;
+    background:#FAFAFA;
+}
+
+.faq-questions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 30px;
+    background:#FAFAFA;
+}
+
+.question {
+    width: 1000px;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    background: #FAFAFA;
+}
+
+.question div{
+    padding: 15px 20px;;
+}
+
+#footer{
+    text-align: center;
+    margin: 120px 0 38px 0;
+}
+
+/* search city modal */
+
+.modal-found {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+    /* hide city search modal */
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-found-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-body {
+    background: #FFFFFF;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 7px 10px 1px rgba(34, 60, 80, 0.1);
+}
+
+.modal-contert{
+    width: 196px;
+    height: 600px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.city-name {
+    width: 580px;
+    height: 38px;
+    border-radius: 30px;
+    color: #000000;
+    background: #FFFFFF;
+
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.city-name div {
+    margin: 7px 10px;
+}
+
+.city-name:hover {
+    color: #FFFFFF;
+    background: #90CAF9;
+}
+
+.modal-not-found {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+    /* hide city search modal */
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-not-found-visible{
+
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-body-not-found {
+    width: 600px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-not-found-content {
+    width: 600px;
+    height: 64px;
+    color: #9E9E9E;
+    background: #FFFFFF;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 7px 10px 1px rgba(34, 60, 80, 0.1);
+}
+
+/* add this classes with JS for a night mode*/
+
+.hero-section-night {
+    background-image: url('/img/bg_night.svg');
+}
+
+.search-button-night {
+    background-color: #2A344B;
+}
+
+.hidden {
+    display:none;
+}
+
+.visible {
+    display:block;
+}
+
+img {
+    transition: transform 0.9s ease;
+}
+.arrow-rotate {
+    transform: rotate(-540deg);
+}
