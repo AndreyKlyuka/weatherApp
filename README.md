@@ -31,5 +31,6 @@ Script added to link visual part and some data about weather from API. It does a
 # Difficulties in development
 
 The hardest part was to create a transition to a mobile version, it took a lot of time trying to do this. The problem was not in creating a layout, but in using media queries due to little experience with them ( it was not so hard to create desktop part) and a small amount of time chosen as the deadline.
+Also, there is a problem with arrow which open and close faq text, they open at the second click and work properly after this.
 
 Anyway, i want to continue working on this project and complete all tasks, for improving my skills in creating responsive apps.
