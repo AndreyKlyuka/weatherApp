@@ -27,11 +27,6 @@
 
 }
 
-/* .container{
-    width: 1440px;
-    margin: 0 auto;
-} */
-
 /* colors */
 
 .main-gray {
@@ -412,9 +407,10 @@ img {
     transform: rotate(-540deg);
 }
 
+
 /* responcive start here */
 
-/* @media screen and (max-widgt:1200px  ){
+/* @media screen and (max-width:1200px  ){
     .container{
         width: 1140px;
     }

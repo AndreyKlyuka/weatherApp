@@ -119,7 +119,11 @@ function findCities(city, api="0a2bf8880e3e4b43f5f0eea3378254ae"){
 
             }
         })
-        .catch(err => console.log('error - too few results, some of dropdown fieldS werent rewrite'));
+        .catch(err => console.log('error - too few results, some of index in findCities() werent use'));
+        dropDownCity1.innerHTML = '';
+        dropDownCity2.innerHTML = '';
+        dropDownCity3.innerHTML = '';
+        dropDownCity4.innerHTML = '';
 }
 
 
@@ -163,7 +167,6 @@ function selectCityFromDropDown() {
 //user fill the search field; 2 ways how to confirm input
 
 function inputCity(){
-
     let city = document.getElementById('input').value;
     return city;
 }
