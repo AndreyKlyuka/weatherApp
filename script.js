@@ -174,8 +174,8 @@ window.addEventListener('keypress',function(event){
     }
 })
 
-
-// hidden add to text to hide; visible to show
+//add classes for faq
+// hidden - hide; visible - to show
 
 function openCloseFaq (arrow, block) {
     let myArrow = document.querySelector(`.${arrow}`);

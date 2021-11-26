@@ -27,6 +27,11 @@
 
 }
 
+/* .container{
+    width: 1440px;
+    margin: 0 auto;
+} */
+
 /* colors */
 
 .main-gray {
@@ -38,7 +43,7 @@
 .hero-section {
     width: 100%;
     height: 426px;
-    background-image: url('/img/bg.svg');
+    background-image: url('../img/bg.svg');
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,19 +220,19 @@
 }
 
 .new-york {
-    background-image: url('/img/new york.svg');
+    background-image: url('../img/new york.svg');
 }
 
 .london {
-    background-image: url('/img/london.svg');
+    background-image: url('../img/london.svg');
 }
 
 .dubai {
-    background-image: url('/img/dubai.svg');
+    background-image: url('../img/dubai.svg');
 }
 
 .paris {
-    background-image: url('/img/paris.svg');
+    background-image: url('../img/paris.svg');
 }
 
 .faq {
@@ -406,3 +411,35 @@ img {
 .arrow-rotate {
     transform: rotate(-540deg);
 }
+
+/* responcive start here */
+
+/* @media screen and (max-widgt:1200px  ){
+    .container{
+        width: 1140px;
+    }
+}
+
+@media screen and (max-width:1199px ){
+    .container{
+        width: 960px;
+    }
+}
+
+@media screen and (max-width:991px ){
+    .container{ 
+        width: 720px;
+    }
+}
+
+@media screen and (max-width:767px ){
+    .container{
+        width: 540px;
+    }
+}
+
+@media screen and (max-width:575px ){
+    .container{
+        width: 100%;
+    }
+} */
